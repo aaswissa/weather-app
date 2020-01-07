@@ -16,9 +16,7 @@ const updateUI = (data) => {
     <span>${Math.round(weather.Temperature.Metric.Value)}</span>
     <span>&deg;C</span>
     </div>`
-
-    console.log(card);
-    
+        
   const iconSource = `img/icons/${weather.WeatherIcon}.svg`
   icon.setAttribute('src', iconSource)
 
