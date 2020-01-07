@@ -1,0 +1,17 @@
+body, html {
+  display: flex;
+  margin: 0 auto;
+  background: lightblue;
+}
+
+div{
+  margin-bottom: 20px;
+}
+
+.size{
+  font-size: 28px;
+}
+
+a:hover{
+  text-decoration: none;
+}

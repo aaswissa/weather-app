@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/508e45dbf0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/places.js@1.17.1"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container my-5 mx-auto">
+      <form action="" novalidate class="mt-5">
+        <div class="searchBox-fakeInput">
+          <div class="searchBox-inputWrapper searchBox-inputWrapper_bordered">
+            <input type="text" type="text" id="city" name="city"
+                   placeholder="Search for city..." pattern="\d*" class="form-control searchBox-input js-searchBox-input">
+          </div>
+          <div class="searchBox-clearWrapper">
+            <span class="searchBox-clear js-clearSearchBox">
+              <input class="btn" type="submit" value="Search">
+            </span>          
+          </div>
+        </div>
+      </form>
+
+
+      <form id="add-to-wishlist">
+        <input class="display-none" type="text" name="wishlist-item" id="wishlist-item">
+          <button type="submit" class="btn btn-warning">Add to Favorite</button>
+          <a href="favs.html"><i class="fab fa-gratipay"></i>    MY FAVORITES</a>        
+      </form>
+    
+    <div class="display-none" id="wishlist"></div>
+    
+      <div class="card shadow-lg rounded d-none">
+        <img src="https://via.placeholder.com/400x300" alt="weather card" class="time card-img-top">
+        <div class="icon bg-light mx-auto text-center">
+          <img src="" alt="">
+        </div>
+        <div class="text-muted text-uppercase text-center details">
+          <h5 class="my-3">City name</h5>
+          <div class="my-3">Weather conditions</div>
+          <div class="display-4 my-4">
+            <span>temp</span>
+            <span>&deg;C</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
