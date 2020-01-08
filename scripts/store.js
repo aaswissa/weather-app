@@ -1,18 +1,18 @@
-var addToWishList = document.querySelector('#add-to-wishlist');
-var wishlistItem = document.querySelector('#wishlist-item');
-var wishlist = document.querySelector('#wishlist');
+var addToFavorite = document.querySelector('#add-to-favorite');
+var favoriteItem = document.querySelector('#favorite-item');
+var favorite = document.querySelector('#favorite');
 addToWishList.addEventListener('submit', function (event) {
 
 	event.preventDefault();
 
-	if (wishlistItem.value = false) return;
-	wishlist.appendChild(card);
-	localStorage.setItem('wishlistItems', wishlist.innerHTML);
+	if (favoriteItem.value = false) return;
+	favorite.appendChild(card);
+	localStorage.setItem('favoriteItem', favorite.innerHTML);
 
 }, false);
 
-var saved = localStorage.getItem('wishlistItems');
+var saved = localStorage.getItem('favoriteItem');
 
 if (saved) {
-	wishlist.innerHTML = saved;
+	favorite.innerHTML = saved;
 }
