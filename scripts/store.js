@@ -1,7 +1,7 @@
 var addToFavorite = document.querySelector('#add-to-favorite');
 var favoriteItem = document.querySelector('#favorite-item');
 var favorite = document.querySelector('#favorite');
-addToWishList.addEventListener('submit', function (event) {
+addToFavorite.addEventListener('submit', function (event) {
 
 	event.preventDefault();
 
